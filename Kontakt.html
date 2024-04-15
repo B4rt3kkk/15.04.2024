@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Kontakt</title>
+</head>
+<body>
+ <div class="container">
+
+   <div class="baner">
+      <img src="baner.png">
+   </div>
+
+   <nav>
+      <a href="index.html">Strona Głowna</a>
+      <a href="kontakt.html">Kontakt</a>
+   </nav>
+
+    <div class="Bloki">
+
+
+
+      <div class="PierwszyBlok"></div>
+
+      <div class="DrugiBlok">
+         <h2>Kontakt</h2>
+         <div class="Naprawa">
+         <table>
+            <tr>
+               <td>Imię:</td> 
+            </tr>
+            <tr>
+               <td>Nazwisko:</td> 
+            </tr>
+            <tr>
+               <td>E-mail:</td>  
+            </tr>
+            <tr>
+               <td>Zgłoszenie:</td>  
+            </tr>
+         </table>
+
+         <div class="inputy">
+            <input type="text" id="imie">
+            <input type="text" id="nazwisko">
+            <input type="text" id="email">
+
+            <select>
+               <option value="naprawa komputerów">naprawa komputerów</option>
+               <option value="Odzyskiwanie danych">Odzyskiwanie danych</option>
+               <option value="wirusy">Wirusy</option>
+               <option value="Konfiguracja LAN">Konfiguracja LAN</option>
+            </select>
+
+         </div>
+      </div>
+
+         <button onclick="wyslij()">Wyslij</button>
+         <button onclick="czysć()">Czyść</button>
+         <hr>
+
+        <div id="nazwa"></div>
+        <div id="nazwisko_pokaz"></div>
+        <div id="email_pokaz"></div>
+      </div>
+
+      
+
+      <div class="TrzeciBlok"></div>
+
+  
+      
+    </div>
+    <footer>
+        <i>Autor: 000000000000</i>
+    </footer>
+    <script>
+ function czysć(){
+        console.log("sikla");
+        document.getElementById("nazwa").textContent = " ";
+        document.getElementById("email_pokaz").textContent = " ";
+
+    }
+    function wyslij(){
+        var imie = document.getElementById("imie").value;
+        var nazwisko = document.getElementById("nazwisko").value;
+        var email = document.getElementById("email").value;
+        document.getElementById("nazwa").textContent = imie + " " + nazwisko;
+        document.getElementById("email_pokaz").textContent = email;
+    }
+    console.log("sikla");
+    </script>
+</div>
+</body>
+</html>

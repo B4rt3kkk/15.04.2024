@@ -1,0 +1,83 @@
+html, body{
+    background-color: #E0F7FA;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.container{
+    margin-left: 2%;
+    text-align: center;
+    width: 95%;
+}
+.baner{
+    background-color:  #00838F;
+    height: 200px;
+}
+nav{
+    background-color: #006064;
+    padding: 15px;
+}
+a{
+    padding: 2%;
+    color: white;
+    font-size: 150%;
+    text-decoration: none;
+}
+li{
+    text-align: left;
+}
+.PierwszyBlok{
+    height: 350px;
+    width: 33%;
+}
+.PierwszyBlok{
+    height: 350px;
+    width: 33%;
+}
+.TrzeciBlok{
+    height: 350px;
+    width: 33%;
+}
+.Bloki{
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    background-color: #006064;
+    color: white;
+    padding: 10px;
+    text-align: right;
+}
+button{
+    background-color: #00838F;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    color: #80DEEA;
+}
+
+.inputy{
+    display: flex;
+    flex-direction: column;
+}
+.Formularz{
+    display: flex;
+}
+
+h2{
+    text-align: center;
+    font-size: 12pt;
+  }
+ hr{
+    display: flex;
+    width: 100%;
+ }
+ .inputy input{
+    margin: 3px;
+ }
+ .Naprawa{
+    display: flex;
+ }
+ .Przyciski{
+    margin: 3%;
+ }
